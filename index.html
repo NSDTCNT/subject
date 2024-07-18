@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://i.ibb.co/Rb35ddR/Embedded-Image.png">
-    <title>Search Form</title>
+    <title>Dara Systems/title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
 /* styles.css */
 body {
@@ -82,11 +85,11 @@ button:hover {
 <body bgcolor="#ff0000">
     <div class="top-right"><img src="https://i.ibb.co/Rb35ddR/Embedded-Image.png" width="50px"></div>
     <div class="container">
-        <h1 style="font-size: 1.6em;color:#e9af0f;font-weight: bold;">Search User</h1>
+        <h1 style="font-size: 1.6em;color:#e9af0f;font-weight: bold;">รายงานผลคะแนนเรียลไทม์</h1>
         <form onsubmit="event.preventDefault(); search();" id="search-form">
-            <label for="rowInput">Row (Start):</label>
+            <label for="rowInput"><center>ค้นหารายวิชา/รหัสวิชา</center></label>
             <input type="text" id="rowInput" name="row" required>
-            <button type="submit">Search</button>
+            <button type="submit">ค้นหา</button>
         </form>
         <div id="result"></div>
     </div>
