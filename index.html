@@ -8,7 +8,6 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -39,18 +38,24 @@ input[type="text"] {
 
 button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b30000;
 }
 
 #results {
     margin-top: 20px;
+}
+.top-right {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    z-index: 999;
 }
     </style>
     <script>
@@ -73,7 +78,8 @@ button:hover {
         }
     </script>
 </head>
-<body>
+<body bgcolor="#ff0000">
+    <div class="top-right"><img src="https://i.ibb.co/Rb35ddR/Embedded-Image.png" width="50px"></div>
     <div class="container">
         <h1 style="font-size: 1.6em;color:#e9af0f;font-weight: bold;">Search User</h1>
         <form onsubmit="event.preventDefault(); search();" id="search-form">
