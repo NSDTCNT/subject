@@ -67,16 +67,16 @@ button:hover {
     <script>
         async function search() {
             const Start = document.getElementById('rowInput').value;
-            const response = await fetch(`https://script.google.com/macros/s/AKfycbyD2YrdPejxxla01HQNCrXi98lHoqvVuLQ3CL8Fa-aNPUdv2Mt079R_s8vKb9WCpOmS/exec?action=getUsers`);
+            const response = await fetch(`https://script.google.com/macros/s/AKfycbwKmNTxk42d31k4b1RZfBWvT3UuLHZvdu1S6CHO4BlMNXE_93FVML8CZyxku5q-IP2l/exec?action=getUsers`);
             const data = await response.json();
             const resultDiv = document.getElementById('result');
             const user = data.find(record => record.Start === Start);
             if (user) {
                 resultDiv.innerHTML = `
-                    <h2>ข้อมูลรถไฟหมายเลข ${user.Name}</h2>
-                    <p>สถานีต้นทาง: ${user.Start}</p>
-                    <p>สถานีปลายทาง: ${user.Send}</p>
-                    <p>เวลาออก: ${user.Time}</p>
+                    <h2>วิชา: ${user.Start}</h2>
+                    <p>คะแนนกลางภาค: ${user.Name}</p>
+                    <p>คะแนนรวม: ${user.Send}</p>
+                    <p>เกรด: ${user.Time}</p>
                 `;
             } else {
                 resultDiv.innerHTML = 'ไม่พบข้อมูล';
